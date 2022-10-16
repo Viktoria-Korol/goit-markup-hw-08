@@ -262,6 +262,28 @@ summary {
   display: list-item;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -310,19 +332,11 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .section .no-padding {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.section {
-  min-width: 1200px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .header {
@@ -517,24 +531,26 @@ img {
 
 /* ЗАГОЛОВОК ГЕРОЙ */
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images1/hero/slider-img1.png);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images1/hero/slider-img1.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images1/hero/header-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images1/hero/header-img.jpg);
+  min-width: 480px;
+  padding: 118px 60px;
+  margin-bottom: 60px;
+  background-size: 480px 400px;
   background-color: #2F303A;
-  padding: 200px 0;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hero__title {
-  color: #fff;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #fff;
   margin-bottom: 30px;
 }
 .hero__button {
@@ -564,11 +580,14 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images1/hero/header-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images1/hero/header-img@2x.jpg);
+  }
+}
 /* ПЕРЕВАГИ */
 .benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 1170px;
 }
 
@@ -685,29 +704,21 @@ img {
 }
 
 .section-team {
+  width: 480px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 30px;
 }
 
 .team-member-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .team-member-list .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: -30px;
   margin-left: 30px;
   -ms-flex-preferred-size: calc(25% - 30px);
@@ -754,15 +765,9 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .team-card-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -773,9 +778,6 @@ img {
 }
 
 .social-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1768,4 +1770,16 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
+}
+
+.card-img {
+  width: 480px;
+}
+
+@media (min-width: 576px) {
+  .card-img {
+    -ms-flex-preferred-size: calc((100% - 20px) / 2);
+        flex-basis: calc((100% - 20px) / 2);
+    margin: 5px;
+  }
 }/*# sourceMappingURL=main.css.map */

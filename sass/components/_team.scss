@@ -5,24 +5,25 @@
 }
 
 .section-team {
+    width: 480px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .team-item {
-    display: flex;
+    // display: flex;
     margin-left: 30px;
 }
 
 .team-member-list {
-    display: flex;
+    // display: flex;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .team-member-list{
     .item {
-            display: flex;
+            // display: flex;
             margin-top: calc(-1 * $card-set-gap);
             margin-left: $card-set-gap;
             flex-basis: calc(100% / 4 - $card-set-gap);
@@ -68,18 +69,18 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
+    // display: flex;
 }
 
 .team-card-social {
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 
 .social-item {
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
