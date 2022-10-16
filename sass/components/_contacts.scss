@@ -1,0 +1,69 @@
+/*КОНТАКТИ*/
+
+.header__contacts{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts__link{
+        color: $contacts-and-paragraph-color;
+        font-weight: 500;
+        line-height: 1.14;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+                &:hover,
+                &:focus {
+                    fill: $accent-color;
+                    transition: fill $time-duration $cubic-bezier;
+                }
+            } 
+       
+
+.header__currents {
+    transition: fill $time-duration $cubic-bezier;
+}
+
+.header__contacts {
+    transition: color $time-duration $cubic-bezier, fill $time-duration $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+ 
+.contacts__tel {
+    padding-left: 50px;
+}
+
+.header__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $contacts-and-paragraph-color;
+}
+
+
+
+.header__nav{
+    .nav__item &{
+        margin-right: 50px;
+    }
+}
+
+.header__nav {
+    .nav__item:last-child &{
+         margin-right: 0;
+            }
+}
+
+.header__nav {
+    .nav__item:not(:last-child) &{
+        margin-right: 50px;
+        }
+}
+ 
