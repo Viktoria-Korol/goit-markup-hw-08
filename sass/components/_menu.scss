@@ -78,6 +78,9 @@
     letter-spacing: 0.02em;
     color: $contacts-and-paragraph-color;
 }
+.mobile-menu{
+    margin-top: 45px;
+}
 
 // MOBILE SOCIAL
 .mobile-social {
@@ -104,3 +107,7 @@
     color: $accent-color;
 }
 
+.current-menu{
+    color: $accent-color;
+    margin-top: 45px;
+}

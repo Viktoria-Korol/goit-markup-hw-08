@@ -1,5 +1,6 @@
 .header__container {
     column-gap: 93px;
+    height: 60px;
 }
 
 .header {
@@ -21,7 +22,11 @@
             }
         }
 
-
+//  @media (max-width: 780px) {
+//      .header-contacts {
+//          display: none;
+//      }
+//  }
 
     .header__link {
         

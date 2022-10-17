@@ -1,19 +1,25 @@
 /*ПОСТІЙНІ КЛІЄНТИ*/
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    width: 450px;
+    
 }
 .clients__title {
     margin-bottom: 50px;
     color: $basic-color;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.16; 
     text-align: center;
 }
 
 .clients__item {
-    margin-left: 30px;
+    margin-bottom: 30px;
+    // margin-left: 30px;
     fill: $svg-color;
 }
 
@@ -22,8 +28,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
+    // width: 170px;
     height: 92px;
+    
 
     border: 1px solid $svg-color;
     border-radius: 4px;
@@ -40,8 +48,8 @@
 }
 
 .clients__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 

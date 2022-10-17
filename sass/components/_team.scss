@@ -2,39 +2,67 @@
 .team-member {
     margin-top: 0;
     margin-bottom: 10px;
+    // margin-top: 0;
+        // margin-bottom: 10px;
+}
+
+.card-img{
+    width: 450px;
+}
+.section-title {
+
+    margin-bottom: 50px;
+    color: $basic-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    // font-size: 36px;
+    // line-height: 1.16;
+    text-align: center;
 }
 
 .section-team {
-    width: 480px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // width: 480px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
 }
 
 .team-item {
+    display: flex;
     // display: flex;
-    margin-left: 30px;
+    // margin-left: 30px;
 }
 
 .team-member-list {
     // display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+    // margin-top: 0;
+    // margin-bottom: 0;
 }
 
 .team-member-list{
     .item {
-            // display: flex;
+            display: flex;
             margin-top: calc(-1 * $card-set-gap);
             margin-left: $card-set-gap;
             flex-basis: calc(100% / 4 - $card-set-gap);
             padding-top: 50px;
             padding-bottom: 94px;
         }
+        // .item {
+    //         display: flex;
+    //         margin-top: calc(-1 * $card-set-gap);
+    //         margin-left: $card-set-gap;
+    //         flex-basis: calc(100% / 4 - $card-set-gap);
+    //         padding-top: 50px;
+    //         padding-bottom: 94px;
+        // }
 }
 
 .team-card-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
     }
 
 .team-member {
@@ -43,7 +71,18 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    // text-align: center;
+
+    // margin-bottom: 10px;
+    // color: $basic-color;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.18;
+    // text-align: center;
 }
 
 .job-education {
@@ -52,38 +91,63 @@
     color: $contacts-and-paragraph-color;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 0;
+    // margin-bottom: 16px;
+    // color: $contacts-and-paragraph-color;
+    // font-size: 16px;
+    // line-height: 1.18;
+    // text-align: center;
 }
 
 .team-card {
-    background: #FFFFFF;
+    background: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 20px;
+
+    // background: $white-color;
+    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    // border-radius: 0px 0px 4px 4px;
 }
 
 .section-team {
     background-color: $secondary-bg-color;
+    // background-color: $secondary-bg-color;
 }
 
 .team-member-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
     // display: flex;
 }
 
 .team-card-social {
-    // display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 24px;
+        padding-top: 16px;
+
+    
     padding-bottom: 30px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // padding-bottom: 30px;
 }
 
 .social-item {
-    // display: flex;
+    display: flex;
+    
+    margin-right: 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    // margin-right: 10px;
 }
 
 .social-link{
@@ -95,9 +159,13 @@
 }
 
 .social-item{
-    .item:not(:last-child) {
-    margin-right: 10px;
-}
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+//     .item:not(:last-child) {
+//     margin-right: 10px;
+// }
 }
 
 .social-link {
@@ -111,5 +179,15 @@
     align-items: center;
     transition: fill $time-duration $cubic-bezier,
         background-color $time-duration $cubic-bezier;
+    // display: flex;
+    // width: 44px;
+    // height: 44px;
+    // fill: $svg-color;
+    // border: none;
+    // border-radius: 50%;
+    // justify-content: center;
+    // align-items: center;
+    // transition: fill $time-duration $cubic-bezier,
+    //     background-color $time-duration $cubic-bezier;
 
 }
