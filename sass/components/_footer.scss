@@ -1,10 +1,9 @@
 /* ФУТЕР */
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: $background-hero-and-footer;
-    display: block;
-    padding: 60px;
+    padding: 60px 15px;
+    // display: block;
+    // padding: 60px 60px;
 }
 
 .address {
@@ -66,8 +65,11 @@
 }
 
 .logo-footer {
-    display: block;
-    margin-bottom: 20px;
+    // display: block;
+    // margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -81,12 +83,31 @@
 
 
 .footer-nav {
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
 }
 
 .footer-studio {
     color: $white-color;
 }
+
+.form-element-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    padding-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 // .section {
 //     padding-right: 94px;
@@ -94,7 +115,8 @@
 // }
 
 .social-footer {
-    margin-left: 70px;
+   
+    // margin-left: 70px;
 }
 
 .social-footer-link {
@@ -122,8 +144,8 @@
 }
 
 .footer-flex-wrapper {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
 }
 
 .social-media {
@@ -132,18 +154,19 @@
 
 /* FOOTER FORM */
 .footer-form {
-    margin-left: 93px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
+    
+    // margin-left: 93px;
+    // padding-bottom: 20px;
+    // text-transform: uppercase;
 
 }
 .subscription-form {
-    width: 570px;
-    margin-left: 93px;
+    // width: 570px;
+    // margin-left: 93px;
 }
 
 .footer-mail {
-    display: flex;
+    // display: flex;
     padding-left: 12px;
     color: $white-color;
     font-size: 16px;
@@ -191,6 +214,10 @@
 
 .footer-title-form {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+
     margin-bottom: 20px;
     color: $white-color;
     font-family: 'Roboto';
@@ -201,16 +228,17 @@
 }
 
 .footer-btn {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    // justify-content: center;
     letter-spacing: 0.06em;
     margin-left: 12px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
+    margin-top: 20px;
 
     width: 200px;
     height: 50px;
@@ -237,19 +265,16 @@
 }
 
 
-.form-element-footer {
-    display: flex;
-    margin-bottom: 15px;
-}
+
 
 .logo-accent {
     color: $accent-color;
 }
 
 .social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 .social-item{
     .item:not(:last-child) {
@@ -261,11 +286,5 @@
     margin-right: 10px;
 }
 
-.team-card-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-}
 
  

@@ -464,9 +464,7 @@ img {
 
 /*КОНТАКТИ*/
 .header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -876,7 +874,15 @@ img {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients__title {
@@ -891,6 +897,8 @@ img {
 .clients__item {
   margin-bottom: 30px;
   fill: #AFB1B8;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients__link {
@@ -920,11 +928,8 @@ img {
 
 /* ФУТЕР */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2F303A;
-  display: block;
-  padding: 60px;
+  padding: 60px 15px;
 }
 
 .address {
@@ -975,8 +980,15 @@ img {
 }
 
 .logo-footer {
-  display: block;
-  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -988,16 +1000,35 @@ img {
   letter-spacing: 0.06em;
 }
 
-.footer-nav {
-  padding-bottom: 10px;
-}
-
 .footer-studio {
   color: #fff;
 }
 
-.social-footer {
-  margin-left: 70px;
+.form-element-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-footer-link {
@@ -1025,35 +1056,12 @@ img {
   background-color: #2196f3;
 }
 
-.footer-flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .social-media {
   margin-top: 20px;
 }
 
 /* FOOTER FORM */
-.footer-form {
-  margin-left: 93px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.subscription-form {
-  width: 570px;
-  margin-left: 93px;
-}
-
 .footer-mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-left: 12px;
   color: #fff;
   font-size: 16px;
@@ -1156,6 +1164,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
   margin-bottom: 20px;
   color: #fff;
   font-family: "Roboto";
@@ -1166,22 +1181,13 @@ img {
 }
 
 .footer-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   letter-spacing: 0.06em;
   margin-left: 12px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -1203,27 +1209,8 @@ img {
   margin-left: 10px;
 }
 
-.form-element-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 15px;
-}
-
 .logo-accent {
   color: #2196f3;
-}
-
-.social-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .social-item .item:not(:last-child) {
@@ -1232,19 +1219,6 @@ img {
 
 .social-item {
   margin-right: 10px;
-}
-
-.team-card-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 30px;
 }
 
 /* MODAL */
