@@ -25,6 +25,12 @@
     top: 16px;
     right: 16px;
     color: #fff;
+
+     &:hover ,
+    &:focus  {
+    fill: $accent-color;
+    
+}
 }
 
 @media (min-width: 768px){

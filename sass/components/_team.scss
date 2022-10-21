@@ -2,12 +2,25 @@
 .team-member {
     margin-top: 0;
     margin-bottom: 10px;
-    // margin-top: 0;
-        // margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-bottom: 10px;
+        }
+    
+}
+
+.team-card-thumb{ 
+    // padding: 30px 0 24px 0;
+
+//  @media screen and(min-width:1200px) {
+//      padding: 30px 0 30px 0;
+//  }
 }
 
 .card-img{
     width: 450px;
+    margin: 0;
 }
 .section-title {
 
@@ -16,26 +29,56 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
-    // font-size: 36px;
-    // line-height: 1.16;
     text-align: center;
+
+
+@media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+        }
 }
 
 .section-team {
     padding-top: 60px;
     padding-bottom: 60px;
-    // width: 480px;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+    
+
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+                padding-bottom: 60px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 .team-item {
     display: flex;
+        border-radius: 0px 0px 4px 4px;
+        height: 536px;
+        width: 450px;
+    
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 428px;
+        }
     // display: flex;
     // margin-left: 30px;
 }
 
 .team-member-list {
+    
+        display: flex;
+           flex-wrap: wrap;
+           gap: 30px;
+            @media screen and (min-width: 1200px) {
+                flex-wrap: nowrap;
+            }
     // display: flex;
     // margin-top: 0;
     // margin-bottom: 0;
@@ -43,13 +86,23 @@
 
 .team-member-list{
     .item {
-            display: flex;
-            margin-top: calc(-1 * $card-set-gap);
+        margin-top: calc(-1 * $card-set-gap);
             margin-left: $card-set-gap;
             flex-basis: calc(100% / 4 - $card-set-gap);
             padding-top: 50px;
             padding-bottom: 94px;
+    }
         }
+
+            // @media screen and (min-width: 768px) {
+            //         flex-basis: calc((100% - 60px) / 2);
+            //     }
+            
+            //     @media screen and (min-width: 1200px) {
+            //         flex-basis: calc((100% - 150px) / 6);
+            //     }
+           
+       
         // .item {
     //         display: flex;
     //         margin-top: calc(-1 * $card-set-gap);
@@ -58,7 +111,7 @@
     //         padding-top: 50px;
     //         padding-bottom: 94px;
         // }
-}
+
 
 .team-card-content {
     // padding-top: 30px;
