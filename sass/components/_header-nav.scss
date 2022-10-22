@@ -14,13 +14,22 @@
         }
 }
 
+.main-header-container{
+    display: flex;
+        align-items: center;
+
+}
+
 .header {
     .header__container{
         display: flex;
         align-items: center;
+
     }
     
 }
+
+
    .header__nav{
             column-gap: 50px;
             display: flex;

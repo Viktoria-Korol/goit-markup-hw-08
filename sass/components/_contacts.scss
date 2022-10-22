@@ -12,9 +12,11 @@
     
     
         }
+        
 
     @media screen and (min-width: 1200px) {
                 display: flex;
+                flex-direction: row;
                 
              
 
@@ -65,6 +67,8 @@
         }
         @media screen and (min-width: 1200px) {
                 display: flex;
+                margin-left: 30px;
+                padding: 0;
                 align-items: baseline;
 }
 

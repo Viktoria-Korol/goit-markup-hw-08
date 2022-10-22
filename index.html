@@ -21,7 +21,7 @@
 <body>
     <!--ШАПКА САЙТУ-->
     <header class="header">
-        <div class="container header__container">
+        <div class="container main-header-container">
             <nav class="header__container">
 
                 <a href="index.html" class="header__logo"><span class="logo__accent">Web</span>Studio</a>
@@ -298,24 +298,48 @@
                 <ul class="work-list list">
                     <li class="work-item">
                         <div class="work-text"><p class="text-on-photo">ДЕСКТОПНІ ДОДАТКИ</p></div>
-                        <img class="card-img" src="./images1/img.jpg
+
                         
-                        
-                        " alt=" робота з планшетом " width="370">
+<!-- <img src="./images1/work/box1@2x.jpg" alt=""> -->
+                                <!-- <img class="card-img" loading="lazy" srcset="
+                                        ./images1/work/box1.jpg 370w,
+                                        ./images1/work/box1@2x.jpg 740w,
+                                        
+                                      " sizes="(min-width: 1200px) 270px, 100vw "
+                                    src="./images1/work/box1.jpg" alt="робота з планшетом"> -->
+                            <picture>
+                                <source media="(max-width: 1200px)" srcset="
+                                    ./images1/work/box1.jpg 1x,
+                                    ./images1/work/box1@2x.jpg 2x">
+                            
+                                <img class="card-img" src="./images1/work/box1.jpg" alt="робота з планшетом">
+                            </picture>
                         
                     </li>
 
                     <li class="work-item">
                         <div class="work-text"><p class="text-on-photo">МОБІЛЬНІ ДОДАТКИ</p></div>
-
-                        <img class="card-img" src="./images1/img2.jpg" alt=" робота з телефоном " width="370">
+                        <picture>
+                                <source media="(max-width: 1200px)" srcset="
+                                    ./images1/work/box2.jpg 1x,
+                                    ./images1/work/box2@2x.jpg 2x">
+                            
+                                <img class="card-img" src="./images1/work/box2.jpg" alt="робота з телефоном">
+                            </picture>
                         
                     </li>
 
                     <li class="work-item">
                         <div class="work-text"><p class="text-on-photo">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div>
 
-                        <img class="card-img" src="./images1/img3.jpg" alt=" робота з підбором кольорів " width="370">
+                        <picture>
+                                <source media="(max-width: 1200px)" srcset="
+                                    ./images1/work/box3.jpg 1x,
+                                    ./images1/work/box3@2x.jpg 2x">
+                            
+                                <img class="card-img" src="./images1/work/box3.jpg" alt="робота з підбором кольорів">
+                            </picture>
+
                         
                     </li>
                 </ul>
@@ -621,6 +645,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-flex-wrapper">
+
+                <div class="footer-tablet">
                 <div class="footer-nav">
                     <a href="index.html" class="logo-footer"> <span class="logo-accent">Web</span> <span
                             class="footer-studio">Studio</span>
@@ -677,6 +703,8 @@
                         </ul>
                     </div>
                 </div>
+</div>
+
 
                 <div class="footer-form">
                     <b class="footer-title-form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>

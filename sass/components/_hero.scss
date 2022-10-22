@@ -60,6 +60,9 @@
         //     }
 
 &__title {
+display: flex;
+justify-content: center;
+align-items: center;
 
     width: 360px;
         font-weight: 900;

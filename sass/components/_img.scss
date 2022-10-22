@@ -1,10 +1,23 @@
-// .card-img{
-//     width: 450px;
+.team-card-thumb {
+    width: 418px;
+    height: 360px;
+}
 
-// }
-// @media (min-width: 576px){
-//     .card-img{
-//         flex-basis: calc((100% - 4 * 5px) / 2);
-//         margin: 5px;
-//     }
-// }
+@media screen and (min-width: 768px) {
+    
+    .team-card-thumb {
+
+        width: 354px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .team-card-thumb {
+
+        width: 270px;
+
+    }
+}
+
