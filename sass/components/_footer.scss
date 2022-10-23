@@ -5,7 +5,7 @@
 
     @media screen and (min-width: 1200px){
         display: block;
-            padding: 60px 60px;
+            padding: 60px 0;
     }
     
 }
@@ -178,7 +178,7 @@
 .footer-flex-wrapper {
     @media screen and (min-width: 1200px) {
             display: flex;
-                align-items: baseline;
+            align-items: baseline;
         }
     
 }
@@ -201,7 +201,7 @@
 .subscription-form {
     @media screen and (min-width: 1200px) {
         width: 570px;
-            margin-left: 93px;
+            // margin-left: 93px;
         }
     
 }
@@ -274,8 +274,9 @@
             padding-top: 60px;
         }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
             padding: 0;
+            padding-top: 0;
             display: flex;
                 justify-content: center;
                 align-items: center;
