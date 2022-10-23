@@ -1559,15 +1559,6 @@ img {
 }
 
 .footer-title-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 60px;
   margin-bottom: 20px;
   color: #fff;
@@ -1577,9 +1568,23 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .footer-title-form {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .footer-title-form {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1615,6 +1620,7 @@ img {
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
             flex-direction: unset;
+    margin: 20px auto 0;
   }
 }
 @media screen and (min-width: 1200px) {
