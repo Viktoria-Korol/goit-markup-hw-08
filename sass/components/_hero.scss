@@ -2,9 +2,7 @@
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images1/hero/mobile-hero.jpg);
 
-
-    min-width: 480px;
-        padding: 118px 60px;
+        padding: 118px 0;
         margin-bottom: 60px;
     align-items: baseline;
     background-color: $background-hero-and-footer;
@@ -64,7 +62,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-    width: 360px;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.6;
@@ -101,7 +98,7 @@ align-items: center;
 display: flex;
 justify-content: center;
 align-items: center;
-    margin: 0 65px;
+    margin: 0 auto;
     padding-bottom: 30px;
     padding: 10px 32px;
     min-width: 216px;
