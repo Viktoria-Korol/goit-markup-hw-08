@@ -67,6 +67,15 @@
 }
 
 // Mobile contacts
+
+.mobile-wrapper{
+    display: flex;
+        flex-direction: column
+}
+
+.mobile-menu{
+    flex-grow: 1
+}
 .mobile-item:not(:last-child) {
     margin-bottom: 32px;
 }

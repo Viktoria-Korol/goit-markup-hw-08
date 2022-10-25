@@ -95,8 +95,11 @@
 .footer-nav {
    
     @media screen and (min-width: 1200px) {
+        margin: 0;
+
             padding-bottom: 10px;
         }
+        
 }
 
 .footer-studio {
@@ -126,6 +129,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+            justify-content: left;
+    
+        }
 }
 
 
@@ -140,6 +148,11 @@
 }
 
 .social-footer {
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+        }
+    
     @media screen and (min-width: 768px) {
             margin-left: 165px;
                 padding: 0;
@@ -275,10 +288,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width: 768px) {
-            
-            padding-top: 60px;
-        }
+
 
     @media screen and (max-width: 1199px) {
             padding: 0;
@@ -372,5 +382,11 @@
             margin-left: 76px;
        
     }
+        @media screen and (min-width: 1200px) {
+            align-items: baseline;
+            margin-left: 0;
+            margin-right: 0;
+    
+        }
 }
 
