@@ -6,11 +6,6 @@
     padding-left: 0;
     padding-right: 0;
 
-    display: flex;
-flex-wrap: wrap;
- gap: 30px;
- justify-content: center; 
-
 
 @media screen and(min-width: 1200px) {
     padding-top: 94px;
@@ -44,12 +39,7 @@ flex-wrap: wrap;
 }
 
 .clients__item {
-   
-    margin-bottom: 30px;
-    
     fill: $svg-color;
- 
-
     height: 92px;
         flex-basis: calc((100% - 30px) / 2);
     

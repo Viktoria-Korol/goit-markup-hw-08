@@ -265,6 +265,8 @@ summary {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -334,10 +336,6 @@ img {
   height: auto;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (min-width: 1200px) {
   .container {
     padding-left: 15px;
@@ -630,7 +628,6 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images1/hero/mobile-hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images1/hero/mobile-hero.jpg);
   padding: 118px 0;
-  margin-bottom: 60px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -826,7 +823,7 @@ img {
 
 .benefits__title {
   margin-top: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 700;
   line-height: 1.1;
@@ -1165,15 +1162,6 @@ img {
   padding-bottom: 60px;
   padding-left: 0;
   padding-right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .clients {
@@ -1213,7 +1201,6 @@ img {
 }
 
 .clients__item {
-  margin-bottom: 30px;
   fill: #AFB1B8;
   height: 92px;
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -1264,17 +1251,12 @@ img {
 /* ФУТЕР */
 .footer {
   background-color: #2F303A;
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .footer {
     display: block;
-    padding: 60px 0;
   }
-}
-
-.address {
-  margin-top: 20px;
 }
 
 .contacts-footer .item {
@@ -1339,11 +1321,11 @@ img {
   margin-left: 215px;
   margin-left: 0;
   letter-spacing: 0.06em;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .logo-footer {
     display: block;
-    margin-bottom: 20px;
   }
 }
 
@@ -1455,8 +1437,12 @@ img {
 }
 
 /* FOOTER FORM */
+.footer-form {
+  margin-top: 60px;
+}
 @media screen and (min-width: 1200px) {
   .footer-form {
+    margin-top: 0;
     margin-left: 93px;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -1581,7 +1567,9 @@ img {
 }
 
 .footer-title-form {
-  padding-top: 60px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 20px;
   color: #fff;
   font-family: "Roboto";
@@ -1703,8 +1691,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 }
 

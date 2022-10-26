@@ -1,18 +1,14 @@
 /* ФУТЕР */
 .footer {
     background-color: $background-hero-and-footer;
-    padding: 60px 15px;
+    padding: 60px 0;
 
     @media screen and (min-width: 1200px){
         display: block;
-            padding: 60px 0;
     }
     
 }
 
-.address {
-    margin-top: 20px;
-}
 
 .contacts-footer {
     .item {
@@ -82,10 +78,11 @@
     margin-left: 215px;
     margin-left: 0;
     letter-spacing: 0.06em;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
         display: block;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
         }
 
     
@@ -132,6 +129,7 @@
 
     @media screen and (min-width: 1200px) {
             justify-content: left;
+
     
         }
 }
@@ -202,8 +200,9 @@
 
 /* FOOTER FORM */
 .footer-form {
-    
+margin-top: 60px;
     @media screen and (min-width: 1200px) {
+        margin-top: 0;
             margin-left: 93px;
                 padding-bottom: 20px;
                 text-transform: uppercase;
@@ -214,7 +213,6 @@
 .subscription-form {
     @media screen and (min-width: 1200px) {
         width: 570px;
-            // margin-left: 93px;
         }
     
 }
@@ -277,9 +275,7 @@
 }
 
 .footer-title-form {
-    
-    padding-top: 60px;
-
+    align-items: baseline;
     margin-bottom: 20px;
     color: $white-color;
     font-family: 'Roboto';
@@ -300,7 +296,6 @@
 }
 
 .footer-btn {
-    
     letter-spacing: 0.06em;
     margin-left: 12px;
     font-family: 'Roboto';
@@ -384,8 +379,7 @@
     }
         @media screen and (min-width: 1200px) {
             align-items: baseline;
-            margin-left: 0;
-            margin-right: 0;
+            margin: 0;
     
         }
 }
