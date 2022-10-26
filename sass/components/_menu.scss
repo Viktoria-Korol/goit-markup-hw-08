@@ -68,13 +68,14 @@
 
 // Mobile contacts
 
-.mobile-wrapper{
+.mobile-wrapper {
     display: flex;
-        flex-direction: column
+    flex-direction: column;
+    height: 100%;
 }
 
-.mobile-menu{
-    flex-grow: 1
+.mobile-menu {
+    flex-grow: 1;
 }
 .mobile-item:not(:last-child) {
     margin-bottom: 32px;
@@ -87,7 +88,6 @@
 }
 
 .mobile-tel {
-    margin-top: 320px;
     font-weight: 500;
     font-size: 34px;
     line-height: 1.2;

@@ -2256,6 +2256,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .mobile-menu {
@@ -2274,7 +2275,6 @@ img {
 }
 
 .mobile-tel {
-  margin-top: 320px;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.2;
