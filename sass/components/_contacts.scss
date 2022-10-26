@@ -3,8 +3,11 @@
 .header__contacts{
     margin: 0;
     display: none;
-
     justify-content: flex-end;
+
+    @media screen and (min-width: 480px) {
+            justify-content: flex-start;
+        }
     
     @media screen and (min-width: 768px) {
             flex-direction: column;
@@ -17,9 +20,6 @@
     @media screen and (min-width: 1200px) {
                 display: flex;
                 flex-direction: row;
-                
-             
-
 }
 
 .contacts__link{
@@ -76,8 +76,6 @@
 
 .header__social {
     display: flex;
-    justify-content: center;
-    align-items: center;
     fill: $contacts-and-paragraph-color;
 }
 
